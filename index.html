@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narendra - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #f8f8f8, #e6e6e6);
+      padding: 20px 50px;
+      color: #222;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #777;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 80px 50px;
+      flex-wrap: wrap;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    .hero h1 span {
+      color: #777;
+    }
+    .hero p {
+      max-width: 500px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ccc;
+      color: #222;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 10px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #aaa;
+    }
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #bbb;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Projects */
+    .projects {
+      padding: 60px 50px;
+      text-align: center;
+    }
+    .projects h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #222;
+    }
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .project-card {
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 50px;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input,
+    .contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    .contact button {
+      padding: 12px;
+      background: #bbb;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .contact button:hover {
+      background: #999;
+    }
+
+    footer {
+      background: #e6e6e6;
+      text-align: center;
+      padding: 15px;
+      color: #444;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Narendra's Portfolio</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Hi, I'm <span>Narendra</span></h1>
+      <p>A passionate Software Developer who builds modern, elegant, and user-friendly website.</p>
+      <a href="resume.pdf" class="btn" target="_blank">📄 Resume</a>
+      <a href="https://github.com/Narendra0010" class="btn" target="_blank">💻 GitHub</a>
+    </div>
+    <div>
+      <img src="images/profile.jpg" alt="Narendra Profile Picture" class="profile-img"/>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <div class="project-list">
+    
+    <!-- Project 1 -->
+    <a href="https://github.com/Narendra0010/portfolio" target="_blank" class="project-card">
+      <img src="images/project1.png" alt="Project 1"/>
+      <h3>Portfolio Website</h3>
+      <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+    </a>
+
+    <!-- Project 2 -->
+    <a href="https://github.com/Narendra0010/Weather-Forecasting" target="_blank" class="project-card">
+      <img src="images/project2.jpeg" alt="Weather Forecasting"/>
+      <h3>Weather Forecasting App</h3>
+      <p>A weather forecasting using JavaScript and OpenWeather API 
+         to show real-time weather updates.</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to get in touch, fill out the form below!</p>
+  
+  <form class="contact-form" onsubmit="showThankYou(event)">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Thank You Message (hidden initially) -->
+  <div class="thank-you" id="thankYouMsg">
+    <h3>✅ Thank You for reaching out!</h3>
+    <p>You can contact me directly at:</p>
+    <p><strong>📧 Email:</strong> narendrajoglekar10@gmail.com</p>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Narendra. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
